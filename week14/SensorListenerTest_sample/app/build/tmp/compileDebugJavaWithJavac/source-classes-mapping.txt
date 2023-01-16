@@ -1,0 +1,5 @@
+mobile/example/sensorlistenertest/BuildConfig.java
+ mobile.example.sensorlistenertest.BuildConfig
+mobile/example/sensorlistenertest/MainActivity.java
+ mobile.example.sensorlistenertest.MainActivity
+ mobile.example.sensorlistenertest.MainActivity$1

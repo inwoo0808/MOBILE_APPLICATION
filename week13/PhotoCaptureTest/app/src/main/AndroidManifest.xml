@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ddwu.com.mobile.multimedia.photo.photocapturetest">
+
+    <!--기기에 카메라가 있을 경우에만 palystore 에서 다운받도록 지정-->
+    <!--<uses-feature android:name="android.hardware.camera"
+                  android:required="true" />-->
+
+    <!--&lt;!&ndash;촬영 사진을 기기의 공용 외부저장소에 저장할 경우 필요-->
+    <!--앱의 전용 내/외부저장소에 저장할 경우 불필요 : Android 4.3 이상일 경우 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <!--외부의 앱이 내 앱의 파일을 접근할 수 있도록 FileProvider 지정-->
+        <!--android:authorities 는 식별을 위해 앱의 패키지명과 조합하여 지정-->
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="ddwu.com.mobile.multimedia.photo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+
+
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

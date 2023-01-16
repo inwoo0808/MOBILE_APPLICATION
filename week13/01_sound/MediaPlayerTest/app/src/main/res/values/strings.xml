@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MediaPlayerTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="song_title">dont_hate_me1.mp3</string>
+    <string name="music_url">http://cooling.dongduk.ac.kr:8080/data/theme_of_false_emperor.mp3</string>
+
+</resources>

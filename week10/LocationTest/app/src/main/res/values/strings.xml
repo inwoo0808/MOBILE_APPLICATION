@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">LocationTest</string>
+    <string name="btn_get_permission">권한 획득</string>
+    <string name="btn_get_last">최종 위치 확인</string>
+    <string name="btn_geocoding">위치명 확인</string>
+    <string name="btn_start">위치 확인 시작</string>
+    <string name="btn_stop">위치 확인 중지</string>
+</resources>

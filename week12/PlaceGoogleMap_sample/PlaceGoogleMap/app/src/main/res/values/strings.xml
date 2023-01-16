@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Place Google Map</string>
+    <string name="api_key">YOUR_API_KEY</string>
+    <string name="keyword_hint">카페 or 식당 입력</string>
+    <string name="init_lat">37.604094</string>
+    <string name="init_lng">127.042463</string>
+</resources>
